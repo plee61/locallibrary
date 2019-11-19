@@ -15,9 +15,9 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-//var dev_db_url = 'mongodb+srv://plee61:B3rtha@memo-vg2t7.mongodb.net/local_library?retryWrites=true&w=majority';
-//var mongoDB = process.env.MONGODB_URI || dev_db_url;
-var mongoDB = 'mongodb+srv://production:B3rtha@memo-vg2t7.mongodb.net/local_library_prod?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://plee61:B3rtha@memo-vg2t7.mongodb.net/local_library?retryWrites=true&w=majority';
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
+//var mongoDB = 'mongodb+srv://production:B3rtha@memo-vg2t7.mongodb.net/local_library_prod?retryWrites=true&w=majority';
 //var mongoDB = 'mongodb+srv://plee61:B3rtha@memo-vg2t7.mongodb.net/local_library?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
